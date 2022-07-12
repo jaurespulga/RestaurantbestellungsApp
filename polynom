@@ -1,0 +1,42 @@
+#Erstellung der polynom von 2 Grad
+
+import java.util.Scanner;
+
+public class PolynomGrad2 {
+	public static void main(String[] args) {
+		   Scanner lesen = new Scanner (System.in);
+	       
+		   double a = 1.0;
+		   double b = 2.5;
+		   double c = 3.5;
+		   // Eingabe von a
+		   System.out.print("Geben Sie den Wert von a ein: ");
+		   a = lesen.nextDouble();
+		   while (a == 0.0) {
+			   System.out.println("Ungültige Eingabe ( a muss von 0 unterschied sein ) ");
+			   System.out.print("Geben Sie den Wert von a ein: ");
+			   a = lesen.nextDouble();
+		   }
+		   
+		   // Eingabe von b
+		   System.out.print("Geben Sie den Wert von b ein: ");
+		   b = lesen.nextDouble();
+		   
+		   //Eingabe von c
+		   System.out.print("Geben Sie den Wert von c ein: ");
+		   c = lesen.nextDouble();
+		   
+		   double delta = b * b - 4.0 * a * c ;
+		   if ( delta < 0.0 ) {                        // Keine reelle Lösung
+			   System.out.println("Das polynom P hat keine Nullstelle ");
+		   } else {
+			   if (delta == 0.0 ) {                    // Eine reelle Lösung
+				   System.out.print(" Das polynom P hat nur eine Nullstelle " + (-b)/(2.0 * a ));
+				   } else {                            // zwei reelle Lösung
+					   double m = (-b + Math.sqrt(delta)) / (2.0 * a) ;
+					   double n = (-b + Math.sqrt(delta)) / (2.0 * a) ;
+					   System.out.print("Die zwei Nullstellen  Des polynoms P sind " + m + " und " + n );
+				   }
+			   lesen.close();
+		   }
+		   
