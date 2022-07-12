@@ -1,2 +1,2 @@
 # RestaurantbestellungsApp
-ein App, der das Bestellungsprozess im Restaurant verwalten
+ein App, der das Polynom von 2 Grad erstellt
