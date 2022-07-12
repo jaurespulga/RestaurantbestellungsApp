@@ -1,2 +1,2 @@
 # RestaurantbestellungsApp
-ein App, der das Bestellungsprozess in einem Restaurant verwalten
+ein App, der das Bestellungsprozess im Restaurant verwalten
